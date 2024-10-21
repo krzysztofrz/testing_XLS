@@ -499,17 +499,113 @@
 
         form .btn {
             position: absolute;
-            top: 270px;
+            top: 260px;
             left: 195px;
         }
 
-        form p {
+        form .form-check1 {
+            position: absolute;
+            top: 363px;
+            left: 195px;
+            font-size: 11px;
+            text-align: left !important;
+        }
+
+        form .form-check2 {
+            position: absolute;
+            top: 400px;
+            left: 195px;
+            font-size: 11px;
+            text-align: left !important;
+        }
+
+        form .par1 {
             font-size: 11px;
             position: absolute;
-            top: 332px;
+            top: 317px;
             left: 195px;
             text-align: left !important;
         }
+
+        form .par2 {
+            font-size: 11px;
+            position: absolute;
+            top: 433px;
+            left: 195px;
+            text-align: left !important;
+        }
+
+        @media screen and (max-width: 1200px) {
+            form .par2 {
+
+                top: 320px;
+                left: -331px;
+                width: 80%
+            }
+
+            .policy {
+                padding-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 990px) {
+            form .par2 {
+                top: 320px;
+                left: -331px;
+                width: 80%;
+                position: static;
+            }
+
+            form .par1 {
+                font-size: 11px;
+                position: static;
+                top: 317px;
+                left: 195px;
+                text-align: left !important;
+            }
+
+            form .form-check1 {
+                position: static;
+            }
+
+
+            form .form-check2 {
+                position: static;
+            }
+
+            .policy {
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+                margin-top: 30px;
+
+            }
+        }
+
+        /* Powiększenie checkboxa i zmiana tła */
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+            position: relative;
+            outline: none;
+        }
+
+        .form-check-input:checked {
+            background-color: #CA5B10;
+            border: 1px solid #ccc;
+        }
+
+        /* Usunięcie podkreślenia z linka */
+        .no-underline {
+            text-decoration: none;
+            color: #CA5B10;
+        }
+
 
         .form-con {
             position: relative;
@@ -517,7 +613,7 @@
         }
 
         .gray3 {
-            margin-top: 1240px !important;
+            margin-top: 1340px !important;
             display: flex;
             flex-direction: column;
             width: 70%;
@@ -600,7 +696,7 @@
         .nav-tabs .nav-link {
             font-weight: 700;
             font-style: normal;
-            font-size: 22px;
+            font-size: 18px;
             line-height: 1.4em;
             color: #2F3132;
             padding: 1.5rem 1rem;
@@ -616,7 +712,7 @@
 
         @media screen and (max-width: 1199.98px) {
             .nav-tabs .nav-link {
-                font-size: 16px;
+                font-size: 13px;
             }
         }
 
@@ -661,7 +757,7 @@
         }
 
         .paneB h4 {
-            padding-top: 20px;
+            padding-top: 3px;
         }
 
         .pane div {
@@ -742,7 +838,7 @@
             }
 
             .nav-tabs .nav-link {
-                font-size: 14px;
+                font-size: 13px;
                 padding: 14px;
             }
         }
@@ -826,19 +922,19 @@
 
         @media (max-width: 990px) {
             #products2 {
-                margin-top: 1960px;
+                margin-top: 2200px;
             }
         }
 
         @media (max-width: 767px) {
             #products2 {
-                margin-top: 2475px;
+                margin-top: 2682px;
             }
         }
 
         @media (max-width: 575px) {
             #products2 {
-                margin-top: 2535px;
+                margin-top: 2803px;
             }
 
             .check h2 {
@@ -846,45 +942,75 @@
             }
         }
 
-        @media (max-width: 510px) {
+        @media (max-width: 542px) {
             #products2 {
-                margin-top: 2600px;
+                margin-top: 2851px;
             }
         }
 
-        @media (max-width: 477px) {
+        @media (max-width: 510px) {
             #products2 {
-                margin-top: 2650px;
+                margin-top: 2950px;
+            }
+        }
+
+        @media (max-width: 481px) {
+            #products2 {
+                margin-top: 3100px;
+            }
+        }
+
+        @media (max-width: 478px) {
+            #products2 {
+                margin-top: 3120px;
             }
         }
 
         @media (max-width: 458px) {
             #products2 {
-                margin-top: 2700px;
+                margin-top: 3140px;
+            }
+        }
+
+        @media (max-width: 439px) {
+            #products2 {
+                margin-top: 3160px;
+            }
+        }
+
+        @media (max-width: 437px) {
+            #products2 {
+                margin-top: 3180px;
+            }
+        }
+
+        @media (max-width: 430px) {
+            #products2 {
+                margin-top: 3210px;
             }
         }
 
         @media (max-width: 420px) {
             #products2 {
-                margin-top: 2750px;
+                margin-top: 3290px;
             }
         }
 
         @media (max-width: 410px) {
             #products2 {
-                margin-top: 2800px;
+                margin-top: 3330px;
             }
         }
 
         @media (max-width: 380px) {
             #products2 {
-                margin-top: 2850px;
+                margin-top: 3400px;
             }
         }
 
         @media (max-width: 376px) {
             #products2 {
-                margin-top: 2900px;
+                margin-top: 3440px;
             }
         }
 
@@ -996,7 +1122,7 @@
 
         .stripes3 {
             position: absolute;
-            top: 2908px;
+            top: 3060px;
             right: 5px;
             width: 127px;
             height: auto;
@@ -1073,7 +1199,7 @@
 
         .q-phone img {
             width: 52px;
-            margin-right: 59px;
+            margin-right: 42px;
         }
 
         @media screen and (max-width: 700px) {
@@ -1338,11 +1464,42 @@
             .footer-left>.footer-logo-last {
                 scale: 2.2;
             }
+
+            .aside-form-img {
+                scale: 1.3;
+                margin-bottom: 45px;
+            }
         }
 
         @media screen and (max-width: 478px) {
             .footer-left>.footer-logo-middle {
                 margin-left: 5 0px !important;
+            }
+
+            .form-img {
+                scale: 1.1
+            }
+
+            .aside-form-img {
+                margin-top: 40px;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .form-img {
+                scale: 1.2
+            }
+        }
+
+        /* Domyślnie ukryj znacznik <br> */
+        .line-break {
+            display: none;
+        }
+
+        /* Poniżej szerokości 550px pokaż znacznik <br> */
+        @media (max-width: 550px) {
+            .line-break {
+                display: inline;
             }
         }
     </style>
@@ -1371,7 +1528,7 @@
             <div class=" headline row justify-content-end py-lg-5 py-4 my-3 my-lg-4">
                 <div class="col-11 col-md-10 col-lg-9 w-100">
                     <h1 class="hero-h1-headline text-end">
-                        <span class="white-text" data-aos="fade-down">Razem, z każdego miejsca</span>
+                        <span class="white-text break-txt" data-aos="fade-down">Razem, z każdego miejsca</span>
                     </h1>
                 </div>
             </div>
@@ -1442,7 +1599,7 @@
                                 <div class="col-md-3 d-flex box" data-aos="flip-up">
                                     <div class=" p-4 flex-fill d-flex flex-column justify-content-end">
                                         <h3 class="mb-2">4.</h3>
-                                        <p>ZAINSTALUJ SAMODZIELNIE LUB Z EKSPERTEM</p>
+                                        <p>ZAINSTALUJ SAMODZIELNIE LUB Z EKSPERTEM SLX</p>
                                     </div>
                                 </div>
                             </div>
@@ -1450,7 +1607,7 @@
                     </div>
                 </div>
                 <!-- white with formu -->
-                <div id="heroBottom1" class="col-11 col-md-12 white-background text-center">
+                <div id="heroBottom1" class="col-md-12 white-background text-center">
                     <div class="white-con-form col-12 col-md-11 col-lg-10" data-aos="zoom-in">
                         <h2 class="hero-h2-headline mb-4">ZOBACZ PRZEWODNIK PO GOTOWYCH ZESTAWACH AUDIO-VIDEO
                             LOGITECH I
@@ -1497,8 +1654,43 @@
                                             <input type="tel" class="form-control" id="inputPhone">
                                         </div>
                                     </div>
+
                                     <button type="submit" class="btn">Wyślij</button>
-                                    <p>&ast; Otrzymasz pełną ofertę na podany adres e-mail w informacji zwrotnej</p>
+                                    <p class="par1">&ast; Otrzymasz pełną ofertę na podany adres e-mail w informacji
+                                        zwrotnej</p>
+                                    <div class="policy">
+                                        <!-- Dodane dwa checkboxy pod paragrafem -->
+                                        <div class="form-check1 text-left d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" id="checkbox1"
+                                                style="width: 20px; height: 20px;">
+                                            <label class="form-check-label ms-2" for="checkbox1">
+                                                Tak, wyrażam zgodę na kontakt w sprawie wysłanego zapytania
+                                            </label>
+                                        </div>
+                                        <div class="form-check2 text-left d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" id="checkbox2"
+                                                style="width: 20px; height: 20px;">
+                                            <label class="form-check-label ms-2" for="checkbox2">
+                                                Tak, wyrażam zgodę na kontakt w przyszłości
+                                            </label>
+                                        </div>
+
+
+                                        <!-- Paragraf z informacją o przetwarzaniu danych osobowych -->
+                                        <p class="par2">
+                                            Wyrażam zgodę na przetwarzanie danych osobowych przez administratora tj. SLX
+                                            Sp.
+                                            z o.o., adres:
+                                            62-052 Komorniki ul. Zakładowa 6. Przetwarzanie danych osobowych w zakresie
+                                            przekazanym w formularzu
+                                            odbywa się w celu przesłania zamówionych informacji handlowych o usługach
+                                            świadczonych przez SLX Sp. z o.o.
+                                            zgodnie z <a class="no-underline"
+                                                href="https://www.slx.pl/polityka-prywatnosci/" target="_blank">Polityką
+                                                prywatności</a>
+                                        </p>
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
@@ -1515,22 +1707,22 @@
             <div class="products-con">
                 <div class="product-level">
                     <div class="single-prod" data-aos="fade-right">
-                        <img src="./images/w pakiecie/w pakiecie 1.png" alt="">
+                        <img src="./images/w pakiecie/wpakiecie_1.png" alt="">
                         <p>1. Skompletowany, prekonfigurowany zestaw
                             w jednej paczce</p>
                     </div>
-                    <div class="single-prod" data-aos="fade-left"> <img src="./images/w pakiecie/w pakiecie2.png"
+                    <div class="single-prod" data-aos="fade-left"> <img src="./images/w pakiecie/wpakiecie_2.png"
                             alt="">
                         <p>2. Dokumentację techniczną urządzeń</p>
                     </div>
                 </div>
                 <div class="product-level">
                     <div class="single-prod" data-aos="fade-right">
-                        <img src="./images/w pakiecie/wpakiecie3.png" alt="">
+                        <img src="./images/w pakiecie/wpakiecie_3.png" alt="">
                         <p> 3. Schemat ideowy połączeń i wytyczne elektryczno-sieciowe</p>
                     </div>
                     <div class="single-prod" data-aos="fade-left">
-                        <img src="./images/w pakiecie/wpakiecie4.png" alt="">
+                        <img src="./images/w pakiecie/wpakiecie_4.png" alt="">
                         <p>4. Instrukcję instalacyjno-wdrożeniową</p>
                     </div>
                 </div>
@@ -1568,29 +1760,27 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="huddle-room-tab" data-bs-toggle="tab"
                                 data-bs-target="#huddle-room-tab-pane" type="button" role="tab"
-                                aria-controls="huddle-room-tab-pane" aria-selected="true">Huddle Room</button>
+                                aria-controls="huddle-room-tab-pane" aria-selected="true">MAŁE SALE</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="brainstorm-space-tab" data-bs-toggle="tab"
                                 data-bs-target="#brainstorm-space-tab-pane" type="button" role="tab"
-                                aria-controls="brainstorm-space-tab-pane" aria-selected="false">Brainstorm
-                                Space</button>
+                                aria-controls="brainstorm-space-tab-pane" aria-selected="false">SALE KREATYWNE</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="think-tank-tab" data-bs-toggle="tab"
                                 data-bs-target="#think-tank-tab-pane" type="button" role="tab"
-                                aria-controls="think-tank-tab-pane" aria-selected="false">Think Tank</button>
+                                aria-controls="think-tank-tab-pane" aria-selected="false">POKOJE ZESPOŁÓW</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="boardroom-tab" data-bs-toggle="tab"
                                 data-bs-target="#boardroom-tab-pane" type="button" role="tab"
-                                aria-controls="boardroom-tab-pane" aria-selected="false">Board Room</button>
+                                aria-controls="boardroom-tab-pane" aria-selected="false">SALE ZARZĄDU</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="training-space-tab" data-bs-toggle="tab"
                                 data-bs-target="#training-space-tab-pane" type="button" role="tab"
-                                aria-controls="training-space-tab-pane" aria-selected="false">Training
-                                Space</button>
+                                aria-controls="training-space-tab-pane" aria-selected="false">SALE SZKOLENIOWE</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="solutionsTabContent">
@@ -1599,7 +1789,7 @@
                             <div
                                 class="pane pane1 row justify-content-md-end justify-content-center huddle-room solutions-tab">
                                 <div class="paneB col-md-4 col-lg-3 col-10 white-background p-lg-4 white-bg mt-5">
-                                    <h5>Featuring:</h5>
+                                    <h5>Zawiera:</h5>
                                     <img src="./images/product-images/rally-bar-mini.webp" class="img-fluid"
                                         alt="Logitech Rall Bar Mini Product" />
                                     <h4 class="text-center"><strong>Logitech Rally Bar Mini</strong></h4>
@@ -1611,7 +1801,7 @@
                             <div
                                 class="pane pane2 row justify-content-md-end justify-content-center brainstorm-space solutions-tab">
                                 <div class="paneB col-md-4 col-lg-3 col-10 white-background p-lg-4 white-bg mt-5">
-                                    <h5>Featuring:</h5>
+                                    <h5>Zawiera:</h5>
                                     <img src="./images/product-images/rally-bar-mini.webp" class="img-fluid"
                                         alt="Logitech Rall Bar Mini Product" />
                                     <h4 class="text-center"><strong>Logitech Rally Bar Mini</strong></h4>
@@ -1623,10 +1813,10 @@
                             <div
                                 class=" pane pane3 row justify-content-md-end justify-content-center think-tank solutions-tab">
                                 <div class="paneB col-md-4 col-lg-3 col-10 white-background p-lg-4 white-bg mt-5">
-                                    <h5>Featuring:</h5>
+                                    <h5>Zawiera:</h5>
                                     <img src="./images/product-images/scribe.webp" class="img-fluid"
                                         alt="Logitech Rall Bar Mini Product" />
-                                    <h4 class="text-center"><strong>Logitech Scribe</strong></h4>
+                                    <h4 class="text-center mt-4"><strong>Logitech Scribe</strong></h4>
                                 </div>
                             </div>
                         </div>
@@ -1635,10 +1825,10 @@
                             <div
                                 class="pane pane4 row justify-content-md-end justify-content-center boardroom solutions-tab">
                                 <div class="paneB col-md-4 col-lg-3 col-10 white-background p-lg-4 white-bg mt-5">
-                                    <h5>Featuring:</h5>
+                                    <h5>Zawiera:</h5>
                                     <img src="./images/product-images/sight.webp" class="img-fluid"
                                         alt="Logitech Rall Bar Mini Product" />
-                                    <h4 class="text-center"><strong>Logitech Sight</strong></h4>
+                                    <h4 class="text-center mt-3"><strong>Logitech Sight</strong></h4>
                                 </div>
                             </div>
                         </div>
@@ -1647,7 +1837,7 @@
                             <div
                                 class="pane pane5 row justify-content-md-end justify-content-center training-space solutions-tab">
                                 <div class="paneB col-md-4 col-lg-3 col-10 white-background p-lg-4 white-bg mt-5">
-                                    <h5>Featuring:</h5>
+                                    <h5>Zawiera:</h5>
                                     <img src="./images/product-images/tap.webp" class="img-fluid"
                                         alt="Logitech Rall Bar Mini Product" />
                                     <h4 class="text-center"><strong>Logitech Tap</strong></h4>
@@ -1671,13 +1861,13 @@
                 <div>
                     <img src="./images/icons/email.png" alt="">
                 </div>
-                <p>mail@mail.pl</p>
+                <p>nb@slx.pl</p>
             </div>
             <div class="q-phone">
                 <div>
                     <img src="./images/icons/phone.png" alt="">
                 </div>
-                <p>+48 000 000 000</p>
+                <p>+48 538 182 773</p>
             </div>
             <div>
                 <!-- <button class="btn q-btn">wybierz pakiet dla zespołu</button> -->
@@ -1720,4 +1910,18 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        function insertLineBreak() {
+            var header = document.querySelector(".break-txt");
+            if (window.innerWidth < 550) {
+                header.innerHTML = "razem,<br>z każdego miejsca";
+            } else {
+                header.innerHTML = "razem, z każdego miejsca";
+            }
+        }
+
+        window.addEventListener('resize', insertLineBreak);
+        window.addEventListener('load', insertLineBreak);
+    </script>
+
 </body>
