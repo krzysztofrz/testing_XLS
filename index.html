@@ -250,6 +250,10 @@
             .third-logo {
                 width: 100px;
             }
+
+            .third-logo {
+                padding-top: 14px !important;
+            }
         }
 
         @media screen and (max-width: 900px) {
@@ -1239,6 +1243,10 @@
                 align-items: center;
             }
 
+            .product-level-last {
+                display: flex;
+                align-items: center;
+            }
         }
 
         @media screen and (max-width: 500px) {
@@ -1650,30 +1658,33 @@
                         <div class="form-con col-12 col-md-6 col-lg-5" data-aos="fade-left">
                             <div class="row g-3 align-items-center text-end">
                                 <!-- Form -->
-                                <form>
+                                <form action="send_email.php" method="POST">
                                     <div class="row mb-3 form1">
                                         <label for="inputName" class="col-sm-4 col-form-label">Imię i
                                             Nazwisko&ast;</label>
                                         <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="inputName">
+                                            <input type="text" class="form-control" id="inputName" name="inputName"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="row mb-3 form2">
                                         <label for="inputCompanyName" class="col-sm-4 col-form-label">Firma&ast;</label>
                                         <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="inputCompanyName">
+                                            <input type="text" class="form-control" id="inputCompanyName"
+                                                name="inputCompanyName" required>
                                         </div>
                                     </div>
                                     <div class="row mb-3 form3">
-                                        <label for="inputEmail" class="col-sm-4 col-form-label">Telefon</label>
+                                        <label for="inputPhone" class="col-sm-4 col-form-label">Telefon</label>
                                         <div class="col-sm-8">
-                                            <input type="email" class="form-control" id="inputEmail">
+                                            <input type="tel" class="form-control" id="inputPhone" name="inputPhone">
                                         </div>
                                     </div>
                                     <div class="row mb-3 form4">
-                                        <label for="inputPhone" class="col-sm-4 col-form-label">Mail&ast;</label>
+                                        <label for="inputEmail" class="col-sm-4 col-form-label">Mail&ast;</label>
                                         <div class="col-sm-8">
-                                            <input type="tel" class="form-control" id="inputPhone">
+                                            <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                                                required>
                                         </div>
                                     </div>
 
@@ -1684,14 +1695,14 @@
                                         <!-- Dodane dwa checkboxy pod paragrafem -->
                                         <div class="form-check1 text-left d-flex align-items-center">
                                             <input class="form-check-input" type="checkbox" id="checkbox1"
-                                                style="width: 20px; height: 20px;">
+                                                name="checkbox1" style="width: 20px; height: 20px;">
                                             <label class="form-check-label ms-2" for="checkbox1">
                                                 Tak, wyrażam zgodę na kontakt w sprawie wysłanego zapytania
                                             </label>
                                         </div>
                                         <div class="form-check2 text-left d-flex align-items-center">
                                             <input class="form-check-input" type="checkbox" id="checkbox2"
-                                                style="width: 20px; height: 20px;">
+                                                name="checkbox2" style="width: 20px; height: 20px;">
                                             <label class="form-check-label ms-2" for="checkbox2">
                                                 Tak, wyrażam zgodę na kontakt w przyszłości
                                             </label>
@@ -1748,7 +1759,7 @@
                         <p>4. Instrukcję instalacyjno-wdrożeniową</p>
                     </div>
                 </div>
-                <div class="product-level" data-aos="fade-right">
+                <div class="product-level product-level-last" data-aos="fade-right">
                     <p class="no5">5. Specjalną cenę za zestaw</p>
                 </div>
             </div>
@@ -1945,5 +1956,4 @@
         window.addEventListener('resize', insertLineBreak);
         window.addEventListener('load', insertLineBreak);
     </script>
-
 </body>
